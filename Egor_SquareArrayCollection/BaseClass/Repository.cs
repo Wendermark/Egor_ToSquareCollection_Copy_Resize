@@ -47,13 +47,9 @@ namespace Egor_SquareArrayCollection.BaseClass
             get
             {
                 if (index < Length && index >= Count)
-                {
                     return Array[index];
-                }
                 else
-                {
                     return Array[index];
-                }
             }
             set
             {
@@ -67,9 +63,7 @@ namespace Egor_SquareArrayCollection.BaseClass
         public IEnumerator<T> GetEnumerator()
         {
             foreach (T item in Array)
-            {
                 yield return item;
-            }
         }
 
         public override string ToString() => $"Репозиторий состоит из {Count} элементов и имеет длину {Length}";
