@@ -22,7 +22,7 @@ namespace Egor_SquareArrayCollection
 
             int[] secondArray = new int[10];
 
-            IEnumerable<int> squareArray = Repository<int>.GetSquare(standartArray);
+            IEnumerable<int> squareArray = ArrayUtils<int>.GetSquareCollection(standartArray);
 
             foreach (var item in squareArray)
                 Console.WriteLine($"{item}");

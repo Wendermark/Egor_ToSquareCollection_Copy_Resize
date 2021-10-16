@@ -72,14 +72,6 @@ namespace Egor_SquareArrayCollection.BaseClass
             }
         }
 
-        public static IEnumerable<int> GetSquare(int[] array)
-        {
-            for (int i = 0; i < array.Length; i++)
-            {
-                if (array[i] % 2 != 0)
-                    yield return array[i] * array[i];
-            }
-        }
         public override string ToString() => $"Репозиторий состоит из {Count} элементов и имеет длину {Length}";
     }
 }

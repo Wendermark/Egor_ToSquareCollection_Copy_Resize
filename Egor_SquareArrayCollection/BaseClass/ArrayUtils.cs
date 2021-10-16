@@ -33,5 +33,14 @@ namespace Egor_SquareArrayCollection.BaseClass
                 targetArray[i] = sourceArray[i];
 
         }
+
+        public static IEnumerable<int> GetSquareCollection(int[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] % 2 != 0)
+                    yield return array[i] * array[i];
+            }
+        }
     }
 }
