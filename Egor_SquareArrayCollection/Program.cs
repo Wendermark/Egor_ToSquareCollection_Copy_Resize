@@ -13,12 +13,12 @@ namespace Egor_SquareArrayCollection
         {
             var repository = new Repository<int>(5);
 
-            for (int i = 0; i < repository.Length; i++)
+            for (int i = 1; i < repository.Length+1; i++)
                 repository.Add(i);
 
             Console.WriteLine(repository);
 
-            int[] standartArray = new int[] { 1, 2, 3, 4, 5 };
+            int[] standartArray = repository.Array;
 
             int[] secondArray = new int[10];
 
